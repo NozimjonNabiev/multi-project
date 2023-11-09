@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.nozimjon.api'
+version = '1.0-SNAPSHOT'
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+}
+
+dependencies {
+    implementation project(':core')
+}
+
+application {
+    mainClass = 'src/java/com/nozimjon/api/App.java'
+}

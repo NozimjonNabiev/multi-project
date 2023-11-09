@@ -1,0 +1,10 @@
+rootProject.name = 'multi-project'
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+}
+
+include 'api'
+include 'core'
